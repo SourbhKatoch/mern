@@ -1,1 +1,23 @@
-GET http://localhost:5000/api/contacts
+# GET Retrieving data
+#GET http://localhost:5000/api/contacts 
+
+
+POST http://localhost:5000/api/contacts
+
+Content-type: application/json
+
+{
+    "name": "Sourbh Kumar",
+    "email": "srkkatoch@gmail.com",
+    "phone": "9459292926"
+}
+
+
+
+# here id is primary key
+#PUT http://localhost:5000/api/contacts/123
+
+#
+#GET http://localhost:5000/api/contacts/123
+
+#DELETE http://localhost:5000/api/contacts/123
