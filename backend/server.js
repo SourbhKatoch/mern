@@ -1,5 +1,7 @@
 console.log('Server is running on port 5000');
 
+import cors from 'cors'; //importing cors to allow cross-origin requests
+
 import express, { application } from 'express';
 import dotenv from 'dotenv';
 
@@ -14,6 +16,8 @@ dotenv.config(); //to use environment variables from .env file
 
 import connectDB from './config/dbConnection.js'; //importing the database connection
 connectDB(); //calling the function to connect to the database
+
+app.use(cors()); //using cors middleware to allow cross-origin requests
 
 app.use(express.json());
 
