@@ -2,15 +2,14 @@
 #GET http://localhost:5000/api/contacts 
 
 
-POST http://localhost:5000/api/contacts
+#POST http://localhost:5000/api/contacts
+# Content-type: application/json
 
-Content-type: application/json
-
-{
-    "name": "Sourbh Kumar",
-    "email": "srkkatoch@gmail.com",
-    "phone": "9459292926"
-}
+# {
+#     "name": "Sourbh Kumar",
+#     "email": "srkkatoch@gmail.com",
+#     "phone": "9459292926"
+# }
 
 
 
@@ -20,4 +19,5 @@ Content-type: application/json
 #
 #GET http://localhost:5000/api/contacts/123
 
-#DELETE http://localhost:5000/api/contacts/123
+
+DELETE http://localhost:5000/api/contacts/6889ced38aff2bd0be66578d
